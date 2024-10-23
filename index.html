@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvízjáték</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Kvízjáték</h1>
+        <form id="quizForm">
+            <div class="form-group">
+                <label for="question1">1. Mi Magyarország fővárosa?</label>
+                <input type="text" class="form-control" id="question1" required>
+            </div>
+            <div class="form-group">
+                <label for="question2">2. Mi a legnagyobb magyar folyó?</label>
+                <input type="text" class="form-control" id="question2" required>
+            </div>
+            <div class="form-group">
+                <label for="question3">3. Ki írta a "Toldi" című művet?</label>
+                <input type="text" class="form-control" id="question3" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Válaszok beküldése</button>
+        </form>
+        <div id="result" class="alert alert-custom" role="alert" style="display: none;"></div>
+        <meter id="scoreMeter" min="0" max="3" value="0" style="width: 100%;"></meter>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
